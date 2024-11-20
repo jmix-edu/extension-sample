@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <view xmlns="http://jmix.io/schema/flowui/view"
       xmlns:c="http://jmix.io/schema/flowui/jpql-condition"
-      title="msg://storageListView.title"
+      title="msg://com.company.inventorycontrolsystem.view.storage/storageListView.title"
       focusComponent="storagesDataGrid">
     <data>
         <collection id="storagesDc"
@@ -51,6 +51,9 @@
             <columns resizable="true">
                 <column property="name"/>
                 <column property="address"/>
+                <column property="active"/>
+                <column property="workFrom"/>
+                <column property="workTo"/>
                 <column property="description"/>
                 <column property="phoneNumber"/>
             </columns>
